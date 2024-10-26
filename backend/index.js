@@ -67,6 +67,15 @@ app.get('/api/*',(req, res)=>{
     res.status(404).json({});
 });
 
+app.get('/mobileAPI/',(req, res)=>{
+    res.status(404).json({});
+});
+
+app.get('/api/',(req, res)=>{
+    res.status(404).json({});
+});
+
+
 app.get('*',(req,res)=>{
     res.sendFile(path.resolve(__dirname, '../frontend/dist/index.html'));
 });
